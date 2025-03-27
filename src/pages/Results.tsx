@@ -165,7 +165,7 @@ const Results = () => {
             <div>
               <h1 className="text-2xl font-bold mb-1">{currentReport.subjectName}</h1>
               <p className="text-foreground/70 text-sm">
-                Report created {new Date(currentReport.createdAt).toLocaleDateString()}
+                Investigation started {new Date(currentReport.createdAt).toLocaleDateString()}
               </p>
             </div>
             
@@ -205,10 +205,10 @@ const Results = () => {
               <div className="mt-4 p-4 bg-horizon-amber/10 rounded-lg">
                 <h3 className="text-lg font-medium mb-2 flex items-center">
                   <Clock className="h-5 w-5 mr-2 text-horizon-amber" />
-                  Report in Progress
+                  Investigation in Progress
                 </h3>
                 <p className="text-foreground/80">
-                  We're gathering information about this person. Sections will update automatically as data becomes available.
+                  We're searching across hundreds of sources to build a comprehensive profile. Sections will update automatically as data becomes available.
                 </p>
                 <div className="w-full h-2 bg-white/30 rounded-full mt-4 overflow-hidden">
                   <div className="h-full bg-horizon-amber animate-pulse-slow rounded-full"></div>

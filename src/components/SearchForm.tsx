@@ -53,6 +53,16 @@ const SearchForm = ({ minimal = false, className = '' }: SearchFormProps) => {
     }
   };
   
+  const getIdentifierPlaceholder = (type: Identifier['type']) => {
+    switch(type) {
+      case 'email': return 'Enter email address';
+      case 'employer': return 'Enter current employer';
+      case 'domain': return 'Enter website/domain';
+      case 'phone': return 'Enter phone number';
+      default: return `Enter ${type}`;
+    }
+  };
+  
   return (
     <GlassCard 
       className={`w-full max-w-3xl mx-auto overflow-hidden ${className}`}
@@ -62,7 +72,7 @@ const SearchForm = ({ minimal = false, className = '' }: SearchFormProps) => {
       <form onSubmit={handleSubmit} className="p-6 md:p-8">
         {!minimal && (
           <h2 className="text-2xl font-bold mb-6 text-center">
-            Search for Anyone
+            Begin Your Investigation
           </h2>
         )}
         
@@ -70,7 +80,7 @@ const SearchForm = ({ minimal = false, className = '' }: SearchFormProps) => {
           {/* Full Name Input */}
           <div>
             <Label htmlFor="fullName" className="text-foreground/90 mb-1.5 block">
-              Full Name
+              Full Name (required)
             </Label>
             <Input
               id="fullName"
@@ -120,10 +130,10 @@ const SearchForm = ({ minimal = false, className = '' }: SearchFormProps) => {
                   <SelectValue placeholder="Type" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="email">Email</SelectItem>
-                  <SelectItem value="employer">Employer</SelectItem>
-                  <SelectItem value="domain">Domain</SelectItem>
-                  <SelectItem value="phone">Phone</SelectItem>
+                  <SelectItem value="email">Email Address</SelectItem>
+                  <SelectItem value="employer">Current Employer</SelectItem>
+                  <SelectItem value="domain">Website/Domain</SelectItem>
+                  <SelectItem value="phone">Phone Number</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -131,7 +141,7 @@ const SearchForm = ({ minimal = false, className = '' }: SearchFormProps) => {
             <div className="col-span-6">
               <Input
                 type="text"
-                placeholder={`Enter ${newIdentifierType}`}
+                placeholder={getIdentifierPlaceholder(newIdentifierType)}
                 value={newIdentifierValue}
                 onChange={(e) => setNewIdentifierValue(e.target.value)}
                 className="bg-white/60 border-white/50"
@@ -165,14 +175,14 @@ const SearchForm = ({ minimal = false, className = '' }: SearchFormProps) => {
             ) : (
               <div className="flex items-center justify-center">
                 <SearchIcon className="mr-2 h-4 w-4" />
-                Search Now
+                Begin Investigation
               </div>
             )}
           </Button>
           
           {!minimal && (
             <p className="text-sm text-center mt-2 text-foreground/70">
-              Add optional identifiers to improve search accuracy
+              Enter as much information as you have. More details lead to more accurate results.
             </p>
           )}
         </div>

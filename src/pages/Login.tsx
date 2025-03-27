@@ -48,7 +48,7 @@ const Login = () => {
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold mb-2">Welcome Back</h1>
             <p className="text-foreground/70">
-              Log in to continue your background checks
+              Sign in to access your investigation history and reports
             </p>
           </div>
           
@@ -92,10 +92,10 @@ const Login = () => {
               {loginMutation.isPending ? (
                 <div className="flex items-center">
                   <div className="w-4 h-4 border-2 border-white/50 border-t-white rounded-full animate-spin mr-2"></div>
-                  Logging in...
+                  Signing in...
                 </div>
               ) : (
-                'Log in'
+                'Sign In'
               )}
             </Button>
           </form>
@@ -104,11 +104,11 @@ const Login = () => {
             <p className="text-foreground/70">
               Don't have an account?{' '}
               <Link to="/signup" className="text-primary hover:underline">
-                Sign up
+                Get Your Free Report
               </Link>
             </p>
             <p className="text-foreground/70 text-sm mt-4">
-              New users get one free report!
+              New users receive one free report!
             </p>
           </div>
         </div>

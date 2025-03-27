@@ -40,8 +40,8 @@ const Signup = () => {
 
   const benefits = [
     "One free comprehensive report",
-    "Detailed background information",
-    "Search history tracking",
+    "Detailed background intelligence",
+    "Investigation history tracking",
     "Premium report features"
   ];
 
@@ -59,7 +59,7 @@ const Signup = () => {
             <div className="text-center mb-8">
               <h1 className="text-2xl font-bold mb-2">Create Your Account</h1>
               <p className="text-foreground/70">
-                Sign up to get your free background check report
+                New members receive one free comprehensive report
               </p>
             </div>
             
@@ -117,7 +117,7 @@ const Signup = () => {
                     Creating account...
                   </div>
                 ) : (
-                  'Create Account'
+                  'Get Your Free Report'
                 )}
               </Button>
             </form>
@@ -141,7 +141,7 @@ const Signup = () => {
                 Benefits of Your Free Account
               </h2>
               <p className="text-white/90">
-                Sign up today and receive these exclusive features with your account.
+                Unlock powerful background intelligence with just an email and password.
               </p>
             </div>
             
@@ -162,7 +162,7 @@ const Signup = () => {
                   Your First Report Is On Us
                 </p>
                 <p className="text-sm text-white/90">
-                  Create your account now and receive one comprehensive background check completely free.
+                  Create your account now and receive one comprehensive report completely free. No credit card required.
                 </p>
               </div>
             </div>
