@@ -1,6 +1,10 @@
-# Security Scanner Application
+# Cozy Checks - Security Scanner Application
 
 A comprehensive security scanning application that helps identify vulnerabilities in code repositories using AI-powered analysis.
+
+## Project Info
+
+**Lovable URL**: https://lovable.dev/projects/37a60fc1-1787-4ed2-b2fc-dbf841c9d169
 
 ## Features
 
@@ -24,11 +28,12 @@ A comprehensive security scanning application that helps identify vulnerabilitie
 ### Frontend
 - React
 - TypeScript
-- Tailwind CSS
+- Tailwind CSS with shadcn-ui
 - React Router
 - Zustand for state management
 - TanStack Query (React Query)
 - Recharts for data visualization
+- Vite for development and building
 
 ## Setup Instructions
 
@@ -61,8 +66,8 @@ A comprehensive security scanning application that helps identify vulnerabilitie
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd security-scanner-app
+   git clone https://github.com/rrh1441/cozy-checks.git
+   cd cozy-checks
    ```
 
 2. Install dependencies:
@@ -146,6 +151,24 @@ A comprehensive security scanning application that helps identify vulnerabilitie
 - `POST /api/reports` - Generate a report from a completed scan
 - `GET /api/reports` - Get all reports for the authenticated user
 - `GET /api/reports/:reportId` - Get report details
+
+## How to Edit This Code
+
+There are several ways of editing your application.
+
+**Use Lovable**
+
+Simply visit the [Lovable Project](https://lovable.dev/projects/37a60fc1-1787-4ed2-b2fc-dbf841c9d169) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+## How to Deploy This Project
+
+Simply open [Lovable](https://lovable.dev/projects/37a60fc1-1787-4ed2-b2fc-dbf841c9d169) and click on Share -> Publish.
 
 ## License
 

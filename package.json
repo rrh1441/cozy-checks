@@ -1,5 +1,5 @@
 {
-  "name": "security-scanner-app",
+  "name": "cozy-checks",
   "version": "1.0.0",
   "description": "A security scanning application that integrates with GitHub and uses AI to generate scan reports",
   "main": "dist/server.js",
@@ -20,7 +20,7 @@
     "chatgpt"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@supabase/supabase-js": "^2.49.3",
     "axios": "^1.8.4",
@@ -31,7 +31,6 @@
     "express-validator": "^7.2.1",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.13.0",
     "morgan": "^1.10.0",
     "winston": "^3.17.0"
   },
